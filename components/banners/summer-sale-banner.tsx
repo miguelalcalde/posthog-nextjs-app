@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import pool from '@/public/images/pool.jpg'
 
 export function SummerSaleBanner({ onClick }: { onClick: () => void }) {
   return (
@@ -10,8 +9,10 @@ export function SummerSaleBanner({ onClick }: { onClick: () => void }) {
         <div className="relative overflow-hidden rounded-lg">
           <div className="absolute inset-0">
             <Image
-              src={pool}
+              src="/placeholder.svg?height=600&width=1200"
               alt="Summer Sale"
+              width={1200}
+              height={600}
               className="h-full w-full object-cover object-center"
             />
           </div>
