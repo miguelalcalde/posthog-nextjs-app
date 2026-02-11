@@ -4,6 +4,7 @@ import { Toaster } from 'sonner'
 
 import './globals.css'
 import { ExamplesBanner } from '@/components/banners/examples-banner'
+import { PostHogProvider } from './posthog-provider'
 
 export const metadata: Metadata = {
   title: 'PostHog - Flags SDK Example',
@@ -18,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <ExamplesBanner />
-        {children}
-        <Toaster />
+        <PostHogProvider>
+          <ExamplesBanner />
+          {children}
+          <Toaster />
+        </PostHogProvider>
         <VercelToolbar />
       </body>
     </html>
