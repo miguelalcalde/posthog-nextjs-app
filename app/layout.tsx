@@ -1,4 +1,3 @@
-import { VercelToolbar } from '@vercel/toolbar/next'
 import type { Metadata } from 'next'
 import { Toaster } from 'sonner'
 
@@ -24,7 +23,6 @@ export default function RootLayout({
           {children}
           <Toaster />
         </PostHogProvider>
-        <VercelToolbar />
       </body>
     </html>
   )
