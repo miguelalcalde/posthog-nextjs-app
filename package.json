@@ -24,7 +24,9 @@
     "motion": "12.17.0",
     "nanoid": "5.1.2",
     "next": "^16.0.10",
+    "postcss": "^8.5.3",
     "posthog-js": "^1.236.0",
+    "tailwindcss": "^4.0.9",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "sonner": "2.0.1",
@@ -36,8 +38,6 @@
     "@types/react-dom": "^19",
     "eslint": "^9.21.0",
     "eslint-config-next": "^15.2.0",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.9",
     "typescript": "^5"
   }
 }
