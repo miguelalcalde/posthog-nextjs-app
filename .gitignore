@@ -37,6 +37,3 @@ next-env.d.ts
 
 # lock files
 pnpm-lock.yaml
-
-# temporarily exclude large images
-public/images/
